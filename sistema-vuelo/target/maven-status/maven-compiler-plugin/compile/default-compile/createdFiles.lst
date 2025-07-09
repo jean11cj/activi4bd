@@ -1,0 +1,4 @@
+com\sistemavuelo\infrastructure\output\postgres\JdbcPasajeroRepository.class
+com\sistemavuelo\application\PasajeroRepository.class
+com\sistemavuelo\domain\Pasajero.class
+com\sistemavuelo\infrastructure\input\Main.class

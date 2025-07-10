@@ -24,6 +24,14 @@ public class Main {
         repo.guardar(new Pasajero(1020, "pedro pica paez"));
 
         List<Pasajero> pasajeros = repo.listarTodos();
+        System.out.println("=== Buscar pasajero por ID ===");
+Pasajero encontrado = repo.buscarPorId(1); // Aquí puedes cambiar el ID
+if (encontrado != null) {
+    System.out.println("ID: " + encontrado.getId());
+    System.out.println("Nombre: " + encontrado.getNombre());
+} else {
+    System.out.println("Pasajero no encontrado");
+}
         pasajeros.forEach(p -> System.out.println(p.getId() + ": " + p.getNombre()));
     }
 }
